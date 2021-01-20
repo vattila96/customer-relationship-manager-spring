@@ -1,13 +1,11 @@
-package com.luv2code.springdemo.service;
+package com.attilavarga.customer.relationship.manager.service;
 
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-import com.luv2code.springdemo.dao.CustomerDAO;
-import com.luv2code.springdemo.entity.Customer;
+import com.attilavarga.customer.relationship.manager.dao.CustomerDAO;
+import com.attilavarga.customer.relationship.manager.entity.Customer;
 
 @Service
 public class CustomerServiceImpl implements CustomerService {
@@ -23,25 +21,25 @@ public class CustomerServiceImpl implements CustomerService {
 
 	@Override
 	@Transactional
-	public void saveCustomer(Customer theCustomer) {
-		customerDAO.saveCustomer(theCustomer);
+	public void saveCustomer(Customer customer) {
+		customerDAO.saveCustomer(customer);
 	}
 
 	@Override
 	@Transactional
-	public Customer getCustomer(int theId) {
-		return customerDAO.getCustomer(theId);
+	public Customer getCustomer(int id) {
+		return customerDAO.getCustomer(id);
 	}
 
 	@Override
 	@Transactional
-	public void deleteCustomer(int theId) {
-		customerDAO.deleteCustomer(theId);
+	public void deleteCustomer(int id) {
+		customerDAO.deleteCustomer(id);
 	}
 	
     @Override
     @Transactional
-    public List<Customer> searchCustomers(String theSearchName) {
-        return customerDAO.searchCustomers(theSearchName);
+    public List<Customer> searchCustomers(String searchName) {
+        return customerDAO.searchCustomers(searchName);
     }
 }

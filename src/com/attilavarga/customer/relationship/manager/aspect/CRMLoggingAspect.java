@@ -1,12 +1,8 @@
-package com.luv2code.springdemo.aspect;
+package com.attilavarga.customer.relationship.manager.aspect;
 
 import java.util.logging.Logger;
-
 import org.aspectj.lang.JoinPoint;
-import org.aspectj.lang.annotation.AfterReturning;
-import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
-import org.aspectj.lang.annotation.Pointcut;
+import org.aspectj.lang.annotation.*;
 import org.springframework.stereotype.Component;
 
 @Aspect
@@ -14,13 +10,13 @@ import org.springframework.stereotype.Component;
 public class CRMLoggingAspect {
 	private Logger myLogger = Logger.getLogger(getClass().getName());
 	
-	@Pointcut("execution(* com.luv2code.springdemo.controller.*.*(..))")
+	@Pointcut("execution(* com.attilavarga.customer.relationship.manager.controller.*.*(..))")
 	private void forControllerPackage() {}
 	
-	@Pointcut("execution(* com.luv2code.springdemo.service.*.*(..))")
+	@Pointcut("execution(* com.attilavarga.customer.relationship.manager.service.*.*(..))")
 	private void forServicePackage() {}
 	
-	@Pointcut("execution(* com.luv2code.springdemo.dao.*.*(..))")
+	@Pointcut("execution(* com.attilavarga.customer.relationship.manager.dao.*.*(..))")
 	private void forDaoPackage() {}
 	
 	@Pointcut("forControllerPackage() || forServicePackage() || forDaoPackage()")
