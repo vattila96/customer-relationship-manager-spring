@@ -9,7 +9,7 @@ import com.attilavarga.customer.relationship.manager.entity.Customer;
 import com.attilavarga.customer.relationship.manager.service.CustomerService;
 
 @Controller
-@RequestMapping("/customer")
+@RequestMapping("/customers")
 public class CustomerController {
 	
 	@Autowired
@@ -35,7 +35,7 @@ public class CustomerController {
 	public String saveCustomer(@ModelAttribute("customer") Customer customer) {
 		customerService.saveCustomer(customer);
 		
-		return "redirect:/customer/list";
+		return "redirect:/customers/list";
 	}
 	
 	@GetMapping("/showFormForUpdate")
@@ -50,7 +50,7 @@ public class CustomerController {
 	public String deleteCustomer(@RequestParam("customerId") int id) {
 		customerService.deleteCustomer(id);
 		
-		return "redirect:/customer/list";
+		return "redirect:/customers/list";
 	}
 	
     @GetMapping("/search")
