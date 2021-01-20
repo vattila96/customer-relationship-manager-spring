@@ -1,4 +1,4 @@
-package com.luv2code.springdemo.entity;
+package com.attilavarga.customer.relationship.manager.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -63,6 +63,4 @@ public class Customer {
 	public String toString() {
 		return "Customer [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email + "]";
 	}
-	
-	
 }
