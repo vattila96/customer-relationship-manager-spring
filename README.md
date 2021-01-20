@@ -2,7 +2,6 @@
 A web app for tracking customers.  
 Used technologies: Spring MVC, Hibernate, MySQL, Java, CSS, JSP
 
-A few images of the app:
-![crm-list](D:/Downloads/crm-list.PNG)
-![crm-save](D:/Downloads/crm-save.PNG)
-![Alt text](D:/Downloads/crm-save.PNG?raw=true "Title")
+A few images of the app:  
+
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
