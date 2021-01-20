@@ -40,11 +40,11 @@
 					
 					<c:forEach var="customer" items="${customers}">
 					
-						<c:url var="updateLink" value="/customer/showFormForUpdate">
+						<c:url var="updateLink" value="/customers/showFormForUpdate">
 							<c:param name="customerId" value="${customer.id}" />
 						</c:url>
 						
-						<c:url var="deleteLink" value="/customer/delete">
+						<c:url var="deleteLink" value="/customers/delete">
 							<c:param name="customerId" value="${customer.id}" />
 						</c:url>
 					
