@@ -9,7 +9,7 @@ import com.attilavarga.customer.relationship.manager.entity.Customer;
 import com.attilavarga.customer.relationship.manager.service.CustomerService;
 
 @Controller
-@RequestMapping("/customer")
+@RequestMapping("/customers")
 public class CustomerController {
 	
 	@Autowired
