@@ -1,4 +1,4 @@
-# Customer relationship manager.
+# Customer relationship manager
 Customer relationship manager web app.
 
 Images of the app:  
