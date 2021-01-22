@@ -1,7 +1,7 @@
 # Customer relationship manager
 A web app for tracking customers.  
 
-A few images of the app:  
+Images of the app:  
 
 ![crm-list](https://user-images.githubusercontent.com/15927053/105483229-d18f7400-5ca9-11eb-9aaa-3831f8aa9fda.PNG)
 ***
