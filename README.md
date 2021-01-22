@@ -1,5 +1,5 @@
 # Customer relationship manager
-A web app for tracking customers.  
+Customer relationship manager web app.
 
 Images of the app:  
 
